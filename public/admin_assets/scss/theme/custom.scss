@@ -1,0 +1,45 @@
+.horizontal-menu .bottom-navbar .page-navigation { justify-content: flex-start !important;}
+.page-wrapper .page-content { min-height: calc(100vh - 130px - 50px); }
+// udit 
+
+
+.data-preview {
+    .label { text-transform: uppercase; font-size:0.75rem; font-weight: 600; color:$gray-600; margin-bottom: 0.25rem;  }
+    .value { padding-right: 2rem;;}
+    
+   // @include media-breakpoint-up(md) { 
+        .field { width: 50%;}
+    //}
+}
+
+.list-table {   font-size:0.9rem; }
+
+th.sortable {
+    &::after { font-size: 14px;
+        line-height: 14px;
+        display: inline-block;
+        margin-left: 6px;
+        vertical-align: baseline;
+        opacity: .4;
+     
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: inherit;
+        -webkit-font-smoothing: antialiased;
+        content: "↓";
+        
+        }
+
+    &.active {
+        color:$orange;
+    }
+
+    &.asc::after {
+        content: "↓";
+    }
+
+    &.desc::after {
+        content: "↑";
+    }
+}
+.data-filters {}
